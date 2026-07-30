@@ -112,6 +112,28 @@
     text-align: center;
   }
 
+#AchievementBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-self: center;
+}
+
+
+#AchievementBlocks .AcBlock{
+  width: 50%;
+  height: 10%;
+  text-align: center;
+  flex: 0 0 50%;
+}
+
+.AcBlock img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+
 /*Custom Font*/
 @font-face {
     font-family: Minecraft;
