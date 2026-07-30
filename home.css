@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.navbar div{
+    margin-left: 10px;
+}
+
+.container {
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    max-width: 100%; 
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+.container img{
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: DeepImpactPixel;
+    font-size: 4vw;
+  }
+
+#Descript-Name{
+    width: 90vw;
+    align-self: center;
+    height: 30vh;
+    background-color: whitesmoke;
+    display: flex;
+    margin:auto;
+}
+
+#Descript-Name div{
+    width: 50%;
+    text-align: center;
+    
+}
+
+#Description-Who{
+    justify-content: center;
+    align-items: center;
+    font-family: Minecraft;
+    padding: 5vh 5vh 5vh 5vh;
+    font-size: auto;
+}
+
+#Descript-Name img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*Custom Font*/
+@font-face {
+    font-family: Minecraft;
+    src: url(Assets/Fonts/minecraft/Minecraft.ttf);
+}
+
+@font-face {
+    font-family: DeepImpactPixel;
+    src: url(Assets/Fonts/04b_30/04B_30__.TTF);
+}
