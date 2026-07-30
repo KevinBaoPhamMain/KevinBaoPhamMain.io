@@ -1,6 +1,15 @@
-let ListAchievements = ["ACSL", "Teacher, I am not gaming!"]
-let ListDescription = ["ABCSCIHASCHACHAHDWLIDHAWDHLIADI", "First game made in Unity"]
-let ListImage = ["Assets/Achievements/PHAMGIABAO.jpg", "Assets/Achievements/TEACHER.png"]
+let ListAchievements = [
+    "ACSL", 
+    "Teacher, I am not gaming!"
+    ]
+let ListDescription = [
+    "ABCSCIHASCHACHAHDWLIDHAWDHLIADI",
+    "First game made in Unity"
+    ]
+let ListImage = [
+    "Assets/Achievements/PHAMGIABAO.jpg",
+    "Assets/Achievements/TEACHER.png"
+    ]
 
 let BlankHTML = ""
 
