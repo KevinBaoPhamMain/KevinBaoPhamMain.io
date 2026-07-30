@@ -108,6 +108,10 @@
     width: 50%;
 }
 
+#Achievement h1 {
+    text-align: center;
+  }
+
 /*Custom Font*/
 @font-face {
     font-family: Minecraft;
