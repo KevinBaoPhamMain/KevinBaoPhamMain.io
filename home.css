@@ -1,3 +1,34 @@
+/*Change text location*/
+@media (min-width: 769px){
+    .centered {
+    top: 50%;
+    left: 50%;
+  }
+  #Description-Who p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .centered {
+    top: 25%;
+    left: 50%;
+  }
+  #Description-Who p {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 480px){
+    .centered p {
+    top: 10%;
+    left: 50%;
+  }
+  #Description-Who {
+    font-size: 5px;
+  }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,8 +58,6 @@
 
 .centered {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     font-family: DeepImpactPixel;
     font-size: 4vw;
@@ -37,7 +66,6 @@
 #Descript-Name{
     width: 90vw;
     align-self: center;
-    height: 30vh;
     background-color: whitesmoke;
     display: flex;
     margin:auto;
@@ -46,7 +74,6 @@
 #Descript-Name div{
     width: 50%;
     text-align: center;
-    
 }
 
 #Description-Who{
@@ -59,8 +86,8 @@
 
 #Descript-Name img{
     width: 50%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    object-fit:contain;
 }
 
 /*Custom Font*/
