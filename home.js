@@ -1,10 +1,10 @@
 let ListAchievements = [
-    "ACSL", 
+    "ACSL Top 5% Certificate, 2020-2021", 
     "Teacher, I am not gaming!"
     ]
 let ListDescription = [
-    "ABCSCIHASCHACHAHDWLIDHAWDHLIADI",
-    "First game made in Unity"
+    "This is my certificate for being top 5% in ACSL (American Compute Science Leauge) back in 2020-2021. It was my first time competiting against others in a computer science tournament",
+    "This is my first game being published on itch.io. The link is: https://kevinbaopham.itch.io/teacher-i-am-not-gaming"
     ]
 let ListImage = [
     "Assets/Achievements/PHAMGIABAO.jpg",
