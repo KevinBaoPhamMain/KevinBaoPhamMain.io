@@ -5,10 +5,14 @@
     left: 50%;
   }
   #Description-Who p {
-    font-size: 30px;
+    font-size: 20px;
   }
   #Description-Who h1 {
     font-size: 40px;
+  }
+
+  #Description-Who img {
+    height: 25%;
   }
 }
 
@@ -23,6 +27,10 @@
   #Description-Who h1 {
     font-size: 22.5px;
   }
+
+  #Description-Who img {
+    height: 12.5%;
+  }
 }
 
 @media (max-width: 480px){
@@ -35,6 +43,9 @@
   }
   #Description-Who h1 {
     font-size: 15px;
+  }
+  #Description-Who img {
+    height: 10%;
   }
 }
 
@@ -95,8 +106,6 @@
 
 #Descript-Name img{
     width: 50%;
-    height: auto;
-    object-fit:contain;
 }
 
 /*Custom Font*/
