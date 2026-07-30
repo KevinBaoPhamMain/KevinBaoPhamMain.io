@@ -7,6 +7,9 @@
   #Description-Who p {
     font-size: 30px;
   }
+  #Description-Who h1 {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -17,6 +20,9 @@
   #Description-Who p {
     font-size: 12.5px;
   }
+  #Description-Who h1 {
+    font-size: 22.5px;
+  }
 }
 
 @media (max-width: 480px){
@@ -24,8 +30,11 @@
     top: 10%;
     left: 50%;
   }
-  #Description-Who {
+  #Description-Who p {
     font-size: 5px;
+  }
+  #Description-Who h1 {
+    font-size: 15px;
   }
 }
 
