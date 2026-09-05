@@ -1,52 +1,11 @@
-/*Change text location*/
-@media (min-width: 769px){
-    .centered {
-    top: 50%;
-    left: 50%;
-  }
-  #Description-Who p {
-    font-size: 20px;
-  }
-  #Description-Who h1 {
-    font-size: 40px;
-  }
-
-  #Description-Who img {
-    height: 25%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px){
-    .centered {
-    top: 25%;
-    left: 50%;
-  }
-  #Description-Who p {
-    font-size: 12.5px;
-  }
-  #Description-Who h1 {
-    font-size: 22.5px;
-  }
-
-  #Description-Who img {
-    height: 12.5%;
-  }
-}
-
-@media (max-width: 480px){
-    .centered p {
-    top: 10%;
-    left: 50%;
-  }
-  #Description-Who p {
-    font-size: 5px;
-  }
-  #Description-Who h1 {
-    font-size: 15px;
-  }
-  #Description-Who img {
-    height: 10%;
-  }
+.container,
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 *{
@@ -68,70 +27,102 @@
     padding: 0;
     margin: 0;
     font-size: 30px;
+    position: relative;
   }
 
 .container img{
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.5;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .centered {
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     font-family: DeepImpactPixel;
-    font-size: 4vw;
+    font-size: clamp(2rem, 4vw, 5rem);
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   }
 
-#Descript-Name{
-    width: 90vw;
-    align-self: center;
-    background-color: whitesmoke;
-    display: flex;
-    margin:auto;
+#Description-Who {
+  font-family: Minecraft;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem;
 }
 
-#Descript-Name div{
-    width: 50%;
-    text-align: center;
+#Description-Who h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
-#Description-Who{
-    justify-content: center;
-    align-items: center;
-    font-family: Minecraft;
-    padding: 5vh 5vh 5vh 5vh;
-    font-size: auto;
+#Description-Who p {
+  font-size: clamp(0.95rem, 1.5vw, 1.25rem);
 }
 
-#Descript-Name img{
-    width: 50%;
+#Descript-Name img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#Achievement {
+  padding: 2rem 1rem 3rem;
 }
 
 #Achievement h1 {
     text-align: center;
+    margin-bottom: 1.5rem;
   }
 
 #AchievementBlocks {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  align-self: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: min(1100px, 90vw);
+  margin: 0 auto;
 }
 
-
 .AcBlock {
-  width: 50%;
-  height: 10%;
+  flex: 1 1 300px;
+  max-width: 500px;
   text-align: center;
-  flex: 0 0 50%;
-  padding: 5vh 5vh 5vh 5vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.AcBlock .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
 }
 
 .AcBlock img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 220px;
   object-fit: contain;
+  display: block;
+  background: #fff;
+  padding: 1rem;
+}
+
+.AcBlock p {
+  margin-bottom: 0;
 }
 
 

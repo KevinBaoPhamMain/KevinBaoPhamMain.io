@@ -14,7 +14,15 @@ let ListImage = [
 let BlankHTML = ""
 
 for (let i = 0 ; i < ListAchievements.length; i++){
-    let BasedExam = `<div class='AcBlock'> \n <img src='${ListImage[i]}'> \n <p>${ListAchievements[i]}</p> \n <p>${ListDescription[i]}</p> \n </div>`
+    let BasedExam = `
+        <div class='AcBlock card h-100'>
+            <img src='${ListImage[i]}' alt='${ListAchievements[i]}' class='card-img-top'>
+            <div class='card-body'>
+                <p class='fw-bold'>${ListAchievements[i]}</p>
+                <p>${ListDescription[i]}</p>
+            </div>
+        </div>
+    `
     BlankHTML += BasedExam
 }
     

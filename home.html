@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="home.css" >
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="achievements.html">Achievements</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="achievements.html">Achievements</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
       <div class="container">
         <img src="Assets/Home/JapanBackground.gif" alt="JP">
@@ -31,13 +33,13 @@
     </div>
     
     <br>
-    <div id="Descript-Name">
-        <div id="Description-Who">
+    <div class="row align-items-center">
+        <div id="Description-Who" class="col-md-6">
             <h1>Hello! I am Pham Gia Bao</h1>
             <p>Greetings everyone, my name is Pham Gia Bao and I am a coder. I specialize in C# as I usually work on Unity, other than that I know Python, C++, HTML, and Lua.</p>
         </div>
-        <div>
-            <img src="Assets/Home/DescriptName.png">
+        <div class="col-md-6 text-center">
+            <img src="Assets/Home/DescriptName.png" class="img-fluid" alt="Pham Gia Bao">
         </div>
     </div>
     <br>
@@ -46,7 +48,8 @@
       <h1>Main Achievements / Products</h1>
       <div id="AchievementBlocks"></div>
     </div>
-  <script type="text/javascript" script src="home.js"></script>
+  <script src="home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
