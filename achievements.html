@@ -8,29 +8,64 @@
     <link rel="stylesheet" href="achievements.css" >
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarsExample02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="achievements.html">Achievements</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="achievements.html">Achievements / Products</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     
-    <div class="ListBlocks">
-        <div class="AcBlock">
-            <img src='Assets/Achievements/PHAMGIABAO.jpg'>
+    <div class="container-fluid ListBlocks">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center AcBlock">
+                <img src="Assets/Achievements/PHAMGIABAO.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6 AcBlock">
+              <h1>ACSL</h1>  
+              <p>During my 8th grade, I joined American Computer Science League and achieved a top 5% award. It was my first time entering a coding competition.</p>
+            </div>
         </div>
-        <div class="AcBlock">
-            <p><p>EEEEEEEEEEEEEEEEEE</p></p>
+        <div class="row align-items-center">
+            <div class="col-md-6 AcBlock">
+              <h1>Teacher, I am not gaming!</h1>  
+              <p>During my learning at RMIT University, I developed this game as a submission for my assignment. The goal of the game is to play video games sneakily from the teacher.</p>
+            </div>
+            <div class="col-md-6 text-center AcBlock">
+                <img src="Assets/Achievements/TEACHER.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center AcBlock">
+                <video class="img-fluid" controls>
+                  <source src="Assets/Achievements/BlenderCasino.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6 AcBlock">
+              <h1>Casino Blender</h1>  
+              <p>While studying in RMIT, I was introduced to Blender and was taught on animation. It was a rough process, however it was fun and I learnt many things.I</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 AcBlock">
+              <h1>Storage Gambit</h1>  
+              <p>An analog game me and my friends made for one of our assignment. This game is inspired by the show Storage Wars, in which you buy an abadoned storage without seeing much inside, then selling the items to make profit.</p>
+            </div>
+            <div class="col-md-6 text-center AcBlock">
+                <img src="Assets/Achievements/StorageGambit.jpg" class="img-fluid">
+            </div>
         </div>
     </div>
 </body>

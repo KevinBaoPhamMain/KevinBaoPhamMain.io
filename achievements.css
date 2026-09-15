@@ -1,26 +1,56 @@
-.ListBlocks {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  align-self: center;
-}
-
-.AcBlock {
-  width: 50%;
-  height: 10%;
-  text-align: center;
-  flex: 0 0 50%;
-  padding: 5vh 5vh 5vh 5vh;
-}
-
-.AcBlock img {
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+}
+
+.navbar div{
+    margin-left: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  flex-shrink: 0;
+}
+
+.ListBlocks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.ListBlocks .row {
+  flex: 1;
+  width: 100%;
+  margin: 0;
+}
+
+.AcBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.AcBlock p {
+  font-size: clamp(0.95rem, 1.5vw, 1.25rem);
+}
+
+.ListBlocks .row:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+.ListBlocks .row:nth-child(even) {
+  background-color: #d6e6f5;
 }
