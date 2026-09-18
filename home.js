@@ -1,25 +1,24 @@
-let ListAchievements = [
-    "ACSL Top 5% Certificate, 2020-2021", 
-    "Teacher, I am not gaming!"
-    ]
-let ListDescription = [
+let AchieveList = [
+    ["ACSL Top 5% Certificate, 2020-2021",
     "This is my certificate for being top 5% in ACSL (American Compute Science Leauge) back in 2020-2021. It was my first time competiting against others in a computer science tournament",
-    "This is my first game being published on itch.io."
-    ]
-let ListImage = [
-    "Assets/Achievements/PHAMGIABAO.jpg",
+    "Assets/Achievements/PHAMGIABAO.jpg"],
+    
+    ["Teacher, I am not gaming!",
+    "This is my first game being published on itch.io.",
     "Assets/Achievements/TEACHER.png"
     ]
 
+]
+
 let BlankHTML = ""
 
-for (let i = 0 ; i < ListAchievements.length; i++){
+for (let i = 0 ; i < AchieveList.length; i++){
     let BasedExam = `
         <div class='AcBlock card h-100'>
-            <img src='${ListImage[i]}' alt='${ListAchievements[i]}' class='card-img-top'>
+            <img src='${AchieveList[i][2]}' alt='${AchieveList[i][0]}' class='card-img-top'>
             <div class='card-body'>
-                <p class='fw-bold'>${ListAchievements[i]}</p>
-                <p>${ListDescription[i]}</p>
+                <p class='fw-bold'>${AchieveList[i][0]}</p>
+                <p>${AchieveList[i][1]}</p>
             </div>
         </div>
     `
