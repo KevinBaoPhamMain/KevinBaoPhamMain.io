@@ -1,1 +1,1 @@
-This is just a CVB Website. Thats it
+This is just a CV Website. Thats it
